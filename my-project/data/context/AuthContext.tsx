@@ -27,7 +27,7 @@ export function AuthProvider(props) {
 
    async function loginGoogle() {
        const resp = await firebase.auth().signInWithPopup(
-           new firebase.auth.GithubAuthProvider()
+           new firebase.auth.GoogleAuthProvider()
        )
        if(resp.user?.email){
 
